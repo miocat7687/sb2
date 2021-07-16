@@ -1,0 +1,205 @@
+@import 'base';
+
+$bgColor:#00BCD4;
+$postColor:#DD2C00; //?DD2C00
+$headerColor:#B2EBF2;
+$fontColor:#777;
+$sideColor:#00BCD4;
+
+$fontColor:#4C4C6D;
+$popBgColor : white;
+$popFontColor : #D83A56;
+
+
+.wrapper{
+
+    color: $fontColor;
+    position: relative;
+    .side-bt{
+        font-size: 2em;
+        position: absolute;
+        left: 0;
+        bottom: 50%;
+        transform: translate(50%,50%);
+        display: none;
+        @include MD{
+            display: block;
+        }
+    }
+    .header-wrap{
+        position: relative;
+        background-color: $headerColor;
+        @include fx($v:$CT,$direction:column);
+        padding-top: 1em;
+        .title{
+            font-weight: bold;
+            font-size: 1.25em;
+        }
+        .menu-wrap{
+            font-size: 1.25em;
+            @include fx();
+            .menu-list{
+                @include fx();
+                li{
+                    padding: 1em;
+                }
+            }
+            .icon-list{
+                @include MD{
+                    display: none;
+                }
+                @include fx($v:$FE);
+                li{
+                    padding: 0.5em;
+                    padding-bottom: 1em;
+                }
+            }
+        }
+    }   
+    
+    .side-wrap{
+        position: fixed;
+        left: 0;
+        top:0;
+        width: 200px;
+        height: 100vh;
+        background: white;
+        z-index: 1;
+        left: -9999px;
+        transition: all 0.3s;
+        animation-timing-function: linear;
+        .side-header{
+            position: relative;
+            height: 96px;
+            border-bottom: 1px solid black;
+            margin-bottom: 2em;
+        }
+        .side{
+            @include fx($h:$CT);
+            .menu-list{
+                li{
+                    padding: 1em;
+                }
+            }
+            .icon-list{
+                @include fx();
+                position: absolute;
+                bottom: 5%;
+                li{
+                    padding: 0.5em;
+                }
+            }
+        }
+    }
+
+    .main-wrap{
+        padding: 0 2em;
+        position: relative;
+
+
+        section{
+            margin-bottom: 2em;
+        }
+        .slider{
+            img{
+                height: 30vh;
+            }
+        }
+
+        .borad-wrap{
+            @include fx($h:$SB);
+            .board-header{
+                width: 100px;
+                border-bottom: 1px solid $postColor;
+                p{
+                    padding-bottom: 0.25em;
+                }
+            }
+            .board{
+                width: 45%;
+                min-height: 200px;
+                @include MD{
+                    width: 100%;
+                }
+                table{
+                    border-collapse: collapse;
+                    width: 100%;
+                    tr{
+                        td{
+                            padding: 0.5em 0.25em;
+                            &:nth-child(2){
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .instagram-wrap{
+            .instagram-list{
+                width: 102%;
+                overflow-x: hidden;
+                @include fx();
+                .instagram{
+                    margin-right: 2%;
+                    width: 23%;
+                    @include MD{
+                        width: 48%;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer-wrap{
+        @include fx($h:$CT,$v:$CT);
+        height: 100px;
+        background-color: $headerColor;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
