@@ -135,7 +135,7 @@ a:link, a:visited, a:hover, a:active {
 .wrapper .side-wrap {
   position: fixed;
   left: 0;
-  top: 0;
+  bottom: 0;
   width: 200px;
   height: 100vh;
   background: white;
