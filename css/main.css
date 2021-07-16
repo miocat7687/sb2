@@ -65,7 +65,7 @@ a:link, a:visited, a:hover, a:active {
   font-size: 2em;
   position: absolute;
   left: 0;
-  bottom: 50%;
+  bottom: 75%;
   transform: translate(50%, 50%);
   display: none;
 }
