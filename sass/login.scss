@@ -1,0 +1,95 @@
+@import 'base';
+
+$bgColor:#00BCD4;
+$postColor:#DD2C00; //?DD2C00
+$headerColor:#B2EBF2;
+$fontColor:#777;
+$sideColor:#00BCD4;
+
+$fontColor:#4C4C6D;
+$popBgColor : white;
+$popFontColor : #D83A56;
+
+
+
+
+.input-gp{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    .text{
+        position: relative;
+        @include fx($v:$CT);
+        @include shadow($o:0.1,$x:0px,$b:8px);
+        margin-bottom: 0.5em;
+        width: 300px;
+        input{
+            width: 300px;
+            height: 45px;
+            border: 0;
+            font-size: 1em;
+            padding: 0 2.5em;
+            border: 1px solid $sideColor;
+            border-radius: 4px;
+            &:focus{
+                border: $postColor 1px solid;
+            }
+        }
+        .i-left{
+            position: absolute;
+            padding-left: 1em;
+        }
+        .i-right{
+            position: absolute;
+            right: 0;
+            padding-right: 1em;
+
+        }
+    }
+
+    .check{
+        @include fx();
+        height: 40px;
+        margin-bottom: 0.5em;
+        .group{
+            label{
+                display: inline-block;
+                background-color: $headerColor;
+                padding: 0.625em;
+                margin-left: 0.25em;
+                border-radius: 0.25em;
+                @include shadow($o:0.2,$x:0px,$b:8px);
+                cursor: pointer;
+                border: 1px solid white;
+            }
+            input[type=checkbox] {
+                display: none;
+                &:checked  + label{
+                    background-color: #94e3ee;
+                    @include shadow($o:0,$x:0px,$b:8px);
+                    
+                }
+                
+            }
+        }
+    }
+    .btn{
+        margin-bottom: 0.5em;
+        .btn-blue{
+            width: 120px;
+            line-height: 1em;
+            text-align: center;
+            display: inline-block;
+            background-color: $headerColor;
+            padding: 0.625em;
+            margin-left: 0.25em;
+            border-radius: 0.25em;
+            @include shadow($o:0.2,$x:0px,$b:8px);
+            &:active{
+                background-color: #94e3ee;
+                @include shadow($o:0,$x:0px,$b:8px);
+            }
+        }
+    }
+
+}
