@@ -12,7 +12,6 @@ $popFontColor : #D83A56;
 
 
 .wrapper{
-
     color: $fontColor;
     position: relative;
     .side-bt{
@@ -71,14 +70,21 @@ $popFontColor : #D83A56;
         .side-header{
             position: relative;
             height: 96px;
-            border-bottom: 1px solid black;
             margin-bottom: 2em;
+            background-color: $headerColor;
         }
         .side{
             @include fx($h:$CT);
             .menu-list{
+                text-align: center;
+                width: 200px;
                 li{
+                    width: 100%;
                     padding: 1em;
+                    &:hover{
+                        background-color: $headerColor;
+                        color: $bgColor
+                    }
                 }
             }
             .icon-list{
@@ -110,7 +116,6 @@ $popFontColor : #D83A56;
         .borad-wrap{
             @include fx($h:$SB);
             .board-header{
-                width: 100px;
                 border-bottom: 1px solid $postColor;
                 p{
                     padding-bottom: 0.25em;
