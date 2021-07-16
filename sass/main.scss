@@ -93,10 +93,11 @@ $popFontColor : #D83A56;
     }
 
     .main-wrap{
+        @include MD{
         padding: 0 2em;
+        }
+        padding: 0 10%;
         position: relative;
-
-
         section{
             margin-bottom: 2em;
         }
