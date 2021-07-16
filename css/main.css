@@ -245,6 +245,11 @@ a:link, a:visited, a:hover, a:active {
 .wrapper .main-wrap .instagram-wrap .instagram-list .instagram {
   margin-right: 2%;
   width: 23%;
+  margin-bottom: 2%;
+}
+
+.wrapper .main-wrap .instagram-wrap .instagram-list .instagram img {
+  height: 200px;
 }
 
 @media screen and (max-width: 992px) {
